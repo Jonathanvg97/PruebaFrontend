@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# PruebaFrontend - MarketplaceJV de Compras
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descripción
 
-## Available Scripts
+Esta es una aplicación web de compras que te permite explorar y comprar productos en línea. La aplicación utiliza React para construir la interfaz de usuario y gestionar el carrito de compras.
 
-In the project directory, you can run:
+## Capturas de Pantalla
+## Almacenamiento Local Storage
+![Captura de pantalla 4](./prueba_frontend/src/assets/captura5.png)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Características
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Visualización de productos.
+- Páginas de detalles de productos.
+- Agregar productos al carrito.
+- Modificación de la cantidad de productos en el carrito.
+- Eliminación de productos del carrito.
+- Cálculo de totales con y sin IVA.
+- Guardar el carrito en el almacenamiento local del navegador.
+- Visualización de productos recomendados.
+- Mensajes emergentes de confirmación al agregar productos al carrito.
 
-### `npm test`
+## Componentes
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `App`
 
-### `npm run build`
+- **Propósito:** El componente raíz de la aplicación que configura la navegación y proporciona el contexto global del carrito de compras.
+- **Tecnologías utilizadas:** React, React Router.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `Header`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Propósito:** La barra de navegación superior que muestra el título de la aplicación y un ícono de carrito de compras.
+- **Tecnologías utilizadas:** HTML, CSS.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `Home`
 
-### `npm run eject`
+- **Propósito:** La página principal de la aplicación que muestra una lista de productos disponibles para comprar.
+- **Tecnologías utilizadas:** React, API para obtener datos de productos.
+![Captura de pantalla 1](./prueba_frontend/src/assets/image.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### `ProductDetails`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Propósito:** La página de detalles de un producto que muestra información detallada y permite agregar el producto al carrito.
+- **Tecnologías utilizadas:** React, Axios para realizar solicitudes a la API, React Router para la navegación.
+![Captura de pantalla 4](./prueba_frontend/src/assets/captura4.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### `ProductCart`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Propósito:** El carrito de compras que muestra los productos agregados y permite realizar acciones como agregar, eliminar o modificar la cantidad de productos.
+- **Tecnologías utilizadas:** React, Context API para administrar el estado global del carrito.
+![Captura de pantalla 3](./prueba_frontend/src/assets/captura3.png)
 
-## Learn More
+### `Recomendations`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Propósito:** Muestra una lista de los 10 productos más económicos recomendados para el usuario.
+- **Tecnologías utilizadas:** React, Axios para obtener datos de productos.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Captura de pantalla 2](./prueba_frontend/src/assets/Captura2.png)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Por qué se utilizó cada tecnología
 
-### Analyzing the Bundle Size
+- **React:** Se utilizó para construir la interfaz de usuario de la aplicación de manera eficiente y modular.
+- **React Router:** Se utilizó para gestionar la navegación y permitir a los usuarios acceder a diferentes páginas de la aplicación.
+- **Context API:** Se utilizó para gestionar el estado global del carrito de compras y permitir que múltiples componentes accedan y actualicen ese estado de manera sencilla.
+- **Axios:** Se utilizó para realizar solicitudes HTTP y obtener datos de la API externa.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Instalación
 
-### Making a Progressive Web App
+1. Clona este repositorio.
+2. Navega al directorio del proyecto.
+3. Ejecuta `npm install` para instalar las dependencias.
+4. Ejecuta `npm start` para iniciar la aplicación en modo de desarrollo.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+¡Disfruta comprando en nuestra aplicación!
