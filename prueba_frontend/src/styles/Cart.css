@@ -1,0 +1,109 @@
+.product-cart {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  z-index: 1000;
+}
+
+.product-cart h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  justify-content: center;
+  display: flex;
+}
+
+.product-cart ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-cart li {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.productimage {
+  width: 80px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea el título y el precio a la izquierda */
+}
+
+
+.title {
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.descripCart{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.remove-button {
+  padding: 5px; /* Ajusta el tamaño del botón */
+  background: #cff706; /* Cambia el color de fondo según tu preferencia */
+  border: none; /* Quita el borde si lo deseas */
+  cursor: pointer;
+  border-radius: 50%; /* Hace que el botón sea redondo */
+  margin-left: 5px; /* Agrega un margen izquierdo para separarlo del texto */
+}
+
+.open-cart {
+  background: #cff706;
+  color: #140644;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 100%;
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.open-cart:hover {
+  background: #0f83fe;
+}
+
+.open-cart:focus {
+  outline: none;
+}
+
+.close-cart {
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.close-cart:hover {
+  background: #bd2130;
+}
+
+.close-cart:focus {
+  outline: none;
+}
+
+.cart-total {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
