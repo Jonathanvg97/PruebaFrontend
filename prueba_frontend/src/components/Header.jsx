@@ -20,7 +20,7 @@ function Header() {
               Productos
             </Link>
           </li>
-          <li>Recomendaciones</li>
+          <li> <Link to="/recomendations" className="header-link">Recomendaciones</Link></li>
           <li>Iniciar Sesión</li>
         </ul>
       </nav>
