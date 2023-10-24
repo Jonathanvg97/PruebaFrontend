@@ -102,12 +102,16 @@ function ProductCart() {
             <br />
             <strong>Total con IVA: ${formatToTwoDecimals(totalWithIVA)}</strong>
           </div>
-          <button onClick={saveCartToLocalStorage}>Guardar</button>
+          <div className="botones">
+
+          <button onClick={saveCartToLocalStorage} className="add-to-cart">Guardar</button>
           <button className="open-cart" onClick={closeCart}>
             <ShoppingCartIcon />
           </button>
-          <button onClick={closeCart}>Cerrar Carrito</button>
+          <button onClick={closeCart} className="add-to-cart">Cerrar Carrito</button>
         </div>
+        </div>
+
       )}
     </div>
   );

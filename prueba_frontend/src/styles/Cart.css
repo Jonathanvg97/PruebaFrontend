@@ -1,11 +1,12 @@
 .product-cart {
+  border-radius: 20px 10px 20px 10px;
   position: fixed;
   top: 20px;
   right: 20px;
-  background: #fff;
-  border: 1px solid #ccc;
+  background: #ffffff;
+  border: 5px solid #140644;
   padding: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgb(249, 249, 249);
   max-width: 300px;
   z-index: 1000;
 }

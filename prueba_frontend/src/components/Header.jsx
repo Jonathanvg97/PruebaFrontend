@@ -20,11 +20,6 @@ function Header() {
               Productos
             </Link>
           </li>
-          <li>
-            <Link to="/calcular" className="header-link">
-              Calcular
-            </Link>
-          </li>
           <li>Recomendaciones</li>
           <li>Iniciar Sesión</li>
         </ul>
