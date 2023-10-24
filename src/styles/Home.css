@@ -150,8 +150,8 @@
 }
 
 .pagination button {
-  margin: 0 5px; /* Añade un margen entre los botones */
-  padding: 5px 10px; /* Ajusta el espaciado dentro de los botones */
+  margin: 0 5px; 
+  padding: 5px 10px; 
   background-color: #140644;
   color: #fff;
   border: none;
@@ -171,9 +171,9 @@
   display: flex;
   justify-content: center;
   margin: 0 auto 15px;
-  background-color: #140644; /* Color de fondo del área de búsqueda */
+  background-color: #140644; 
   color: #fff;
-  border-radius: 20px; /* Borde redondeado */
+  border-radius: 20px; 
   padding: 5px 10px;
   width: 300px;
 }
@@ -198,11 +198,11 @@
   background: none;
   cursor: pointer;
   font-size: 20px; /* Tamaño del ícono de búsqueda */
-  color: #140644; /* Color del ícono de búsqueda */
+  color: #140644; 
 }
 
 
-/* Estilos para pantallas de hasta 480px (móviles) */
+/* Estilos para pantallas de hasta 720px (móviles) */
 @media (max-width: 720px) {
 
   .imagenProducto {

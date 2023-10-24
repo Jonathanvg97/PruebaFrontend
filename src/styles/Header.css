@@ -30,7 +30,7 @@ body {
 }
 
 .header-nav li {
-  margin-right: 15px; /* Espaciado entre elementos de navegación */
+  margin-right: 15px; 
   font-size: 14px;
   background-color: #140644;
   cursor: pointer;
@@ -43,7 +43,7 @@ body {
 
 .header-link {
   text-decoration: none;
-  color: #fff; /* Color del texto del enlace */
+  color: #fff; 
 }
 
 .columna2 {

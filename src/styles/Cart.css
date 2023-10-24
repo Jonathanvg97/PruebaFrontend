@@ -58,12 +58,12 @@
 }
 
 .remove-button {
-  padding: 5px; /* Ajusta el tamaño del botón */
-  background: #cff706; /* Cambia el color de fondo según tu preferencia */
-  border: none; /* Quita el borde si lo deseas */
+  padding: 5px; 
+  background: #cff706; 
+  border: none; 
   cursor: pointer;
-  border-radius: 50%; /* Hace que el botón sea redondo */
-  margin-left: 5px; /* Agrega un margen izquierdo para separarlo del texto */
+  border-radius: 50%; 
+  margin-left: 5px; 
 }
 
 .open-cart {

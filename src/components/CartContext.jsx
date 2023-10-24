@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useReducer, useEffect } from 'react';
 
+// Definición de los tipos de acciones que se pueden realizar en el carrito
 const cartActionTypes = {
   ADD_TO_CART: 'ADD_TO_CART',
   REMOVE_FROM_CART: 'REMOVE_FROM_CART',
@@ -7,6 +8,7 @@ const cartActionTypes = {
   DECREMENT_QUANTITY: 'DECREMENT_QUANTITY',
 };
 
+// Reductor para gestionar las acciones del carrito
 const cartReducer = (state, action) => {
   if (!state.cart) {
     state.cart = [];
@@ -57,18 +59,21 @@ const cartReducer = (state, action) => {
   }
 };
 
+// Función para cargar el carrito desde el almacenamiento local (localStorage)
 const loadCartFromLocalStorage = () => {
-    const cartData = localStorage.getItem('cart');
-    console.log('Cart Data:', cartData);
+  const cartData = localStorage.getItem('cart');
+  console.log('Cart Data:', cartData);
 
-    console.log('Datos cargados del localStorage:', cartData);
-    return cartData ? JSON.parse(cartData) : { cart: [] };
-  };
-  
+  console.log('Datos cargados del localStorage:', cartData);
+  return cartData ? JSON.parse(cartData) : { cart: [] };
+};
 
+// Creación del contexto para el carrito
 const CartContext = createContext();
 
+// Componente proveedor del carrito
 const CartProvider = ({ children }) => {
+  // Uso del useReducer para gestionar el estado del carrito
   const [cartState, dispatch] = useReducer(cartReducer, loadCartFromLocalStorage);
 
   useEffect(() => {
@@ -76,6 +81,7 @@ const CartProvider = ({ children }) => {
     localStorage.setItem('cart', JSON.stringify(cartState));
   }, [cartState]);
 
+  // Funciones para interactuar con el carrito
   const addToCart = (product) => {
     console.log('Añadiendo al carrito:', product);
     dispatch({ type: cartActionTypes.ADD_TO_CART, product });
@@ -95,7 +101,6 @@ const CartProvider = ({ children }) => {
     console.log('Decrementando cantidad:', productId);
     dispatch({ type: cartActionTypes.DECREMENT_QUANTITY, productId });
   };
-  
 
   return (
     <CartContext.Provider
@@ -112,6 +117,7 @@ const CartProvider = ({ children }) => {
   );
 };
 
+// Hook personalizado para acceder al contexto del carrito
 const useCart = () => {
   return useContext(CartContext);
 };
