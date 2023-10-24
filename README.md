@@ -4,6 +4,19 @@
 
 Esta es una aplicación web de compras que te permite explorar y comprar productos en línea. La aplicación utiliza React para construir la interfaz de usuario y gestionar el carrito de compras.
 
+
+## Requisitos Funcionales
+## 1 
+Mostrar la información de productos y detalles de producto: La aplicación muestra información de productos en la página principal y permite a los usuarios ver detalles de un producto cuando hacen clic en él.
+
+## 2
+Calcular el Valor Total y el valor del IVA: La aplicación permite calcular el valor total de los productos en el carrito, incluyendo el IVA del 19%. También almacena este valor en el almacenamiento local.
+
+## 3
+Consumir la API externa y agregar productos: La aplicación consume la API externa proporcionada y agrega al menos los 10 primeros productos encontrados en ella.
+
+## 4
+Ver más detalles de un producto: Los usuarios pueden ver más detalles de un producto al hacer clic en el botón "Ver más".
 ## Url del despliegue
 
 ![Url] (https://prueba-frontend-gray.vercel.app/)
