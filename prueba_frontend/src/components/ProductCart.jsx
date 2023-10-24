@@ -3,6 +3,7 @@ import "../styles/Cart.css";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 import { useCart } from "./CartContext";
+import Swal from "sweetalert2"; // Importa SweetAlert
 
 function ProductCart() {
   const { cart, removeFromCart, incrementQuantity, decrementQuantity } =
@@ -39,18 +40,26 @@ function ProductCart() {
     console.log('Guardando carrito en el localStorage');
 
     // Crea un objeto para almacenar el carrito y el total con IVA
-     // Validar que cart y totalWithIVA sean objetos válidos
-  if (cart && totalWithIVA) {
-    const cartData = {
-      cart,
-      totalWithIVA,
-    };
-    console.log(cartData)
+    // Validar que cart y totalWithIVA sean objetos válidos
+    if (cart && totalWithIVA) {
+      const cartData = {
+        cart,
+        totalWithIVA,
+      };
 
-    // Convierte el objeto a JSON y almacénalo en el localStorage
-    localStorage.setItem('cart', JSON.stringify(cartData));
-  }
-};
+      // Convierte el objeto a JSON y almacénalo en el localStorage
+      localStorage.setItem('cart', JSON.stringify(cartData));
+
+      // Muestra un SweetAlert de éxito
+      Swal.fire({
+        title: "¡Carrito guardado!",
+        text: "Tus productos se han guardado en el localStorage",
+        icon: "success",
+        confirmButtonColor: "#3085d6",
+        confirmButtonText: "Ok",
+      });
+    }
+  };
 
   // Función para formatear números a dos decimales
   const formatToTwoDecimals = (number) => {
@@ -103,15 +112,13 @@ function ProductCart() {
             <strong>Total con IVA: ${formatToTwoDecimals(totalWithIVA)}</strong>
           </div>
           <div className="botones">
-
-          <button onClick={saveCartToLocalStorage} className="add-to-cart">Guardar</button>
-          <button className="open-cart" onClick={closeCart}>
-            <ShoppingCartIcon />
-          </button>
-          <button onClick={closeCart} className="add-to-cart">Cerrar Carrito</button>
+            <button onClick={saveCartToLocalStorage} className="add-to-cart">Guardar</button>
+            <button className="open-cart" onClick={closeCart}>
+              <ShoppingCartIcon />
+            </button>
+            <button onClick={closeCart} className="add-to-cart">Cerrar Carrito</button>
+          </div>
         </div>
-        </div>
-
       )}
     </div>
   );
