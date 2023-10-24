@@ -20,6 +20,8 @@ function Home() {
         console.error("Error fetching data:", error);
       });
   }, []);
+  
+
 
   const filteredProducts = products.filter((product) =>
     product.title.toLowerCase().includes(search.toLowerCase())
@@ -29,20 +31,6 @@ function Home() {
   const startIndex = (page - 1) * productsPerPage;
   const endIndex = startIndex + productsPerPage;
   const productsToDisplay = filteredProducts.slice(startIndex, endIndex);
-
-  // Función para ir a la página anterior
-  const goToPreviousPage = () => {
-    if (page > 1) {
-      setPage(page - 1);
-    }
-  };
-
-  // Función para ir a la página siguiente
-  const goToNextPage = () => {
-    if (page < totalPages) {
-      setPage(page + 1);
-    }
-  };
 
   return (
     <div className="home">
@@ -78,8 +66,15 @@ function Home() {
         ))}
       </div>
       <div className="pagination">
-        <button onClick={goToPreviousPage}>Anterior</button>
-        <button onClick={goToNextPage}>Siguiente</button>
+        {Array.from({ length: totalPages }, (_, index) => (
+          <button
+            key={index}
+            onClick={() => setPage(index + 1)}
+            className={page === index + 1 ? "active" : ""}
+          >
+            {index + 1}
+          </button>
+        ))}
       </div>
     </div>
   );

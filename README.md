@@ -4,6 +4,10 @@
 
 Esta es una aplicación web de compras que te permite explorar y comprar productos en línea. La aplicación utiliza React para construir la interfaz de usuario y gestionar el carrito de compras.
 
+## Demostración de la Aplicación
+
+[![Ver Demo](./src/assets/Captura2.png)](./src/assets/prueba.mp4)
+
 
 ## Requisitos Funcionales
 ## 1 
