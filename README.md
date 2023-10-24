@@ -4,6 +4,10 @@
 
 Esta es una aplicación web de compras que te permite explorar y comprar productos en línea. La aplicación utiliza React para construir la interfaz de usuario y gestionar el carrito de compras.
 
+## Url del despliegue
+
+![Url] (https://prueba-frontend-gray.vercel.app/)
+
 ## Capturas de Pantalla
 ## Almacenamiento Local Storage
 ![Captura de pantalla 4](./src/assets/captura5.png)
