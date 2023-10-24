@@ -1,0 +1,67 @@
+.product-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.banner {
+  width: 750px;
+  height: 290px;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  border-radius: 40px;
+}
+.product-image {
+  width: 300px;
+  border-radius: 30px 5px 30px 5px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3); /* Agregar sombra */
+}
+
+.product-info {
+  padding: 40px;
+  color: #40145e;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+
+.precio {
+  font-weight: Bold;
+}
+
+.add-to-cart {
+  background-color: #cff706;
+  color: #40145e;
+  font-weight: Bold;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.descripcion {
+  font-size: 14px;
+  width: 400px;
+  line-height: 23px;
+  color: #40145e;
+  font-family: "Montserrat", sans-serif;
+}
+
+.go-back {
+  background-color: #cff706;
+  color: #40145e;
+  font-weight: Bold;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.botones {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
