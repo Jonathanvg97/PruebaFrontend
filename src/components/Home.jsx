@@ -30,6 +30,20 @@ function Home() {
   const endIndex = startIndex + productsPerPage;
   const productsToDisplay = filteredProducts.slice(startIndex, endIndex);
 
+  // Función para ir a la página anterior
+  const goToPreviousPage = () => {
+    if (page > 1) {
+      setPage(page - 1);
+    }
+  };
+
+  // Función para ir a la página siguiente
+  const goToNextPage = () => {
+    if (page < totalPages) {
+      setPage(page + 1);
+    }
+  };
+
   return (
     <div className="home">
       <h2 className="principal">Bienvenido al MarketPlace</h2>
@@ -64,15 +78,8 @@ function Home() {
         ))}
       </div>
       <div className="pagination">
-        {Array.from({ length: totalPages }, (_, index) => (
-          <button
-            key={index}
-            onClick={() => setPage(index + 1)}
-            className={page === index + 1 ? "active" : ""}
-          >
-            {index + 1}
-          </button>
-        ))}
+        <button onClick={goToPreviousPage}>Anterior</button>
+        <button onClick={goToNextPage}>Siguiente</button>
       </div>
     </div>
   );

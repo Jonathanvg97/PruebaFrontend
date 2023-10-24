@@ -38,7 +38,7 @@ body {
 
 .header-nav li:hover {
   background-color: #5b4e85c1;
-  scale: .8;
+  scale: 0.8;
 }
 
 .header-link {
@@ -60,3 +60,30 @@ body {
   margin-right: 10px;
 }
 
+@media (max-width: 720px) {
+  .header-logo img {
+    width: 40px;
+  }
+
+  .columna2 p {
+    font-size: 10px;
+    margin-right: 10px;
+  }
+
+  .header-nav {
+    float: right;
+    margin-left: 0px;
+    font-size: 14px;
+  }
+
+  .header-nav ul {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    justify-content: center;
+    text-align: center;
+  }
+  .header-nav li {
+    font-size: 12px;
+  }
+}

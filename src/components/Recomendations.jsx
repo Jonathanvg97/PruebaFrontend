@@ -27,10 +27,9 @@ function Recomendations() {
   return (
     <div className="home">
       <h2 className="principal">Productos Recomendados (Más Económicos)</h2>
-      <ul>
         <div className="product-list">
           {products.map((product) => (
-            <li key={product.id} className="card">
+            <div key={product.id} className="card">
               <img src={product.images[0]} alt={product.title} className="imagenProducto" />
               <p className="title">{product.title}</p>
               <p className="price">Precio: ${product.price}</p>
@@ -39,10 +38,9 @@ function Recomendations() {
                 Ver más
               </Link>
             </div>
-            </li>
+            </div>
           ))}
         </div>
-      </ul>
     </div>
   );
 }
