@@ -6,7 +6,7 @@ Esta es una aplicación web de compras que te permite explorar y comprar product
 
 ## Demostración de la Aplicación
 
-[![Ver Demo](./src/assets/Captura2.png)](./src/assets/prueba.mp4)
+[![Ver Demo](./src/assets/Captura2.png)](https://www.youtube.com/watch?v=xg3D-lkN4bk)
 
 
 ## Requisitos Funcionales
