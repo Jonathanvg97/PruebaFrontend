@@ -16,8 +16,8 @@ Esta es una aplicación web de compras que te permite explorar y comprar product
 ## Responsive
 La aplicación se ha diseñado teniendo en cuenta la responsividad en diferentes dispositivos, lo que garantiza una experiencia de usuario óptima en teléfonos celulares, tabletas y computadoras.
 
-![Captura de pantalla 6](./src/assets/captura6.png)
-![Captura de pantalla 7](./src/assets/captura7.png)
+![Captura de pantalla 6](./src/assets/Captura6.png)
+![Captura de pantalla 7](./src/assets/Captura7.png)
 
 ## Características
 
